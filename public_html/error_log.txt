@@ -1,0 +1,60 @@
+[02-Apr-2025 18:22:56 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:02 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:03 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 18:44:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 19:03:33 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 19:04:28 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 19:06:57 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 19:08:09 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 19:11:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22
+[02-Apr-2025 19:11:30 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Reaction::getReactionCounts() in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/m/mvolikfg/otvetforum.ru/public_html/public/index.php on line 22

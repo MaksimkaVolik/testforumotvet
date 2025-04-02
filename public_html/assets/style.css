@@ -1,0 +1,616 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+/* Стили поста */
+.post {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reactions button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.reactions button.active {
+    background: #e0f7fa;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+/* Стили профиля */
+.avatar-container {
+    margin: 20px 0;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.comments-section {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.notifications {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Стили для редактора */
+.tox-tinymce {
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Кнопки управления */
+.post-meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.edit-btn, .delete-btn {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.delete-btn:hover {
+    color: red;
+}
+/* Основные стили шапки */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.logo-icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+/* Навигация */
+.main-nav {
+    display: flex;
+    margin-left: 30px;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #3498db;
+}
+
+/* Поиск */
+.search-box {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    transition: width 0.3s;
+}
+
+.search-input:focus {
+    width: 250px;
+    border-color: #3498db;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопки пользователя */
+.create-post-btn {
+    background: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.create-post-btn:hover {
+    background: #2980b9;
+}
+
+.user-avatar-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Выпадающее меню */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #34495e;
+    transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+/* Кнопки авторизации */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .register-btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-btn {
+    border: 1px solid #3498db;
+    color: #3498db;
+}
+
+.register-btn {
+    background: #2ecc71;
+    color: white;
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .header-left, .header-right {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .main-nav {
+        margin: 15px 0;
+    }
+    
+    .search-box {
+        margin: 10px 0;
+    }
+}
+/* Стили для уведомлений */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: white;
+    z-index: 1000;
+    animation: fadeIn 0.3s;
+}
+
+.toast.success {
+    background: #2ecc71;
+}
+
+.toast.error {
+    background: #e74c3c;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Анимация кнопок */
+[class*="-btn"] {
+    transition: transform 0.3s ease, background 0.2s;
+}
+
+[class*="-btn"].active {
+    position: relative;
+}
+
+[class*="-btn"].active::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background: #3498db;
+    border-radius: 50%;
+}
+/* Стили поста */
+.post {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.author-name:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    display: block;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.action-btn:hover {
+    opacity: 1;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-title {
+    margin: 0 0 15px 0;
+    color: #34495e;
+}
+
+.post-text {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.post-image-container {
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #f0f0f0;
+    background: #f9f9f9;
+}
+
+.post-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.post-reactions {
+    display: flex;
+    gap: 10px;
+}
+
+.reaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reaction-btn:hover {
+    background: #e0e0e0;
+}
+
+.reaction-btn.active {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.reaction-btn .count {
+    font-size: 0.9rem;
+}
+/* Стили профиля */
+.profile-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.profile-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.profile-avatar {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+}
+
+#change-avatar-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.profile-avatar:hover #change-avatar-btn {
+    opacity: 1;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h1 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.profile-bio {
+    line-height: 1.6;
+    color: #34495e;
+    margin: 0 0 15px 0;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+    color: #7f8c8d;
+}
+
+.profile-stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-posts {
+    margin-top: 20px;
+}
+
+.no-posts {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 40px 0;
+}
